@@ -80,7 +80,7 @@ func DefaultLexers() []Lexer {
 			// S01 - 02v3, S07-06, s03-5v.9
 			`(?i)^s(?P<s>\d{1,4})[\-\._ ]{1,3}(?P<e>\d{1,5})(?:[\-\._ ]{1,3}(?P<v>v\d+(?:\.\d+){0,2}))?\b`,
 			// Season.01.Episode.02, Series.01.Ep.02, Series.01, Season.01
-			`(?i)^(?:series|season|s)[\-\._ ]?(?P<s>\d{1,4})(?:[\-\._ ]?(?:episode|ep)(?P<e>\d{1,5}))?\b`,
+			`(?i)^(?:series|season|s)[\-\._ ]?(?P<s>\d{1,2})(?:[\-\._ ]?(?:episode|ep)(?P<e>\d{1,5}))?\b`,
 			// Vol.1.No.2, vol1no2
 			`(?i)^vol(?:ume)?[\-\._ ]?(?P<s>\d{1,3})(?:[\-\._ ]?(?:number|no)[\-\._ ]?(?P<e>\d{1,5}))\b`,
 			// Episode 15, E009, Ep. 007, Ep.05-07

@@ -43,7 +43,7 @@ func main() {
 ```
 ## Build standalone cli
 ```
-go build -o rls ./cmd/rls
+go build ./cmd/rls
 ```
 
 ## Run tests
